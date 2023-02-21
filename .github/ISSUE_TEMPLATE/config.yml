@@ -1,0 +1,6 @@
+## To encourage contributors to use issue templates, we don't allow blank issues
+blank_issues_enabled: true
+
+contact_links:
+  - name: "\u2049 FingerEditor Issue"
+    about: "Make sure you have read the Frequently Asked Questions page."
