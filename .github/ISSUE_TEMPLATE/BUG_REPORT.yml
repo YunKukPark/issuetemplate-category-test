@@ -1,0 +1,81 @@
+name: 🐛Bug Report
+description: bug report
+title: "[Bug]: "
+labels: ["bug"]
+assignees: yunkukpark
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📍 간단 설명
+      placeholder: 버그에 대한 간단한 설명을 해주세요.
+    validations: 
+      required: true
+  - type: input
+    id: bug-contents
+    attributes:
+      label: 🗺️ 버그가 일어난 컨텐츠 URL
+      placeholder: 버그가 일어난 컨텐츠 URL (assignees 확인용)
+      value: https://<your.contents.url>
+    validations: 
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 🤖 Expected behavior
+      description: 어떤 행동을 기대했는지 설명해주세요.
+      placeholder: 어떤 행동을 기대했는지 설명해주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 🤡 Actual behavior
+      description: 실제로는 어떻게 동작되었나요?
+      placeholder: 실제로는 어떻게 동작되었나요?
+    validations:
+      required: true
+  - type: textarea
+    id: possible-fix
+    attributes:
+      label: 🩹 Possible Fix
+      description: 버그를 해결할 수 있는 방법이 있다면 적어주세요.
+      placeholder: 버그를 해결할 수 있는 방법이 있다면 적어주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 📝 재현 과정
+      description: 재현 하려면 어떤 과정을 거쳐야 하는지 적어주세요.
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: 📱 버그가 일어난 환경은 어떻게 되나요?
+      description: 버그를 경험 한 환경에 대한 세부 사항을 적어주세요. 개선하는데 도움이 됩니다 
+      value: |
+        * Version used:
+        * Browser Name and version:
+        * Operating System and version (desktop or mobile):
+        * Link to your project:
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: Shell
+  # - type: checkboxes
+  #   id: terms
+  #   attributes:
+  #     label: Code of Conduct
+  #     description: By submitting this issue, you agree to follow our Code of Conduct
+  #     options:
+  #       - label: I agree to follow this project's Code of Conduct
+  #         required: true
